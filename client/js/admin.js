@@ -20,6 +20,7 @@ async function getVideos() {
     renderVideos(data.data);
   } else {
     alert(data.message || data.msg);
+    window.location = "/login.html";
   }
 }
 getVideos();
